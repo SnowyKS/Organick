@@ -1,0 +1,25 @@
+<svg width="40.133301" height="40.133301" viewBox="0 0 40.1333 40.1333" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip2_10">
+			<rect id="Список рассылки" width="24.000000" height="24.000000" transform="translate(7.699951 8.416626)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<circle id="Ellipse 59" cx="20.066650" cy="20.066650" r="20.066668" fill="#274C5B" fill-opacity="1.000000"/>
+	<g clip-path="url(#clip2_10)">
+		<path id="path" d="M10.97 26.43L10.95 26.41C10.95 25.99 11.28 25.66 11.7 25.66C12.11 25.66 12.45 25.99 12.45 26.41L12.42 26.43L10.97 26.43ZM12.42 14.39L12.45 14.41C12.45 14.83 12.11 15.16 11.7 15.16C11.28 15.16 10.95 14.83 10.95 14.41L10.97 14.39L12.42 14.39Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M11.7 26.41L11.7 30.41L27.7 30.41L27.7 10.41L11.7 10.41L11.7 14.41" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="path" d="M10.72 24.14L10.7 24.16C10.28 24.16 9.94 23.83 9.94 23.41C9.94 22.99 10.28 22.66 10.7 22.66L10.72 22.68L10.72 24.14ZM12.67 22.68L12.7 22.66C13.11 22.66 13.45 22.99 13.45 23.41C13.45 23.83 13.11 24.16 12.7 24.16L12.67 24.14L12.67 22.68Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M10.7 23.41L12.7 23.41" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="path" d="M10.72 21.14L10.7 21.16C10.28 21.16 9.94 20.83 9.94 20.41C9.94 19.99 10.28 19.66 10.7 19.66L10.72 19.68L10.72 21.14ZM12.67 19.68L12.7 19.66C13.11 19.66 13.45 19.99 13.45 20.41C13.45 20.83 13.11 21.16 12.7 21.16L12.67 21.14L12.67 19.68Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M10.7 20.41L12.7 20.41" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="path" d="M10.72 18.14L10.7 18.16C10.28 18.16 9.94 17.83 9.94 17.41C9.94 16.99 10.28 16.66 10.7 16.66L10.72 16.68L10.72 18.14ZM12.67 16.68L12.7 16.66C13.11 16.66 13.45 16.99 13.45 17.41C13.45 17.83 13.11 18.16 12.7 18.16L12.67 18.14L12.67 16.68Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M10.7 17.41L12.7 17.41" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+		<circle id="circle" cx="19.699951" cy="15.416626" r="2.000000" fill="#000000" fill-opacity="0"/>
+		<circle id="circle" cx="19.699951" cy="15.416626" r="2.000000" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"/>
+		<path id="path" d="M24.42 25.89L24.45 25.91C24.45 26.33 24.11 26.66 23.7 26.66C23.28 26.66 22.95 26.33 22.95 25.91L22.97 25.89L24.42 25.89ZM16.42 25.89L16.45 25.91C16.45 26.33 16.11 26.66 15.7 26.66C15.28 26.66 14.95 26.33 14.95 25.91L14.97 25.89L16.42 25.89Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M23.7 25.91C23.7 23.7 21.9 21.91 19.7 21.91C17.49 21.91 15.7 23.7 15.7 25.91" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+	</g>
+</svg>

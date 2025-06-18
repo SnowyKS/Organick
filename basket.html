@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+    <header class="bascet-header">
+        <div class="navigation-block-fixed">
+            <img src="./img/Сочетание 1.svg" alt="Organic Store Logo">
+            <div class="navigation">
+                <ul class="nav-container">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./team.html" class="nav-link">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./shop.html" class="nav-link">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contact.html" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./news.html" class="nav-link">News</a>
+                    </li>
+                </ul>
+            </div>
+            <input class="input-nav" type="text" placeholder="Search">
+            <a class="bascet-text" href="./basket.html">
+                <div class="contacts">
+                    <img class="icon-contact" src="./img/Корзина 1.svg" alt="">
+                    <h1>Cart</h1>
+                    <span class="cart-counter">0</span>
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="basket-header">
+            <h1 class="text-basket">Your Cart</h1>
+        </section>
+
+        <section class="basket-container">
+            <h1 class="basket-title">Review Your Order</h1>
+
+            <div class="basket-content">
+                <div class="basket-items">
+                </div>
+
+                <div class="basket-summary">
+                    <h3 class="summary-title">Order Summary</h3>
+
+                    <div class="summary-row">
+                        <span class="summary-label">Subtotal</span>
+                        <span class="summary-value subtotal">$0.00</span>
+                    </div>
+
+                    <div class="summary-row">
+                        <span class="summary-label">Shipping</span>
+                        <span class="summary-value">Free</span>
+                    </div>
+
+                    <div class="summary-row">
+                        <span class="summary-label">Tax</span>
+                        <span class="summary-value tax">$0.00</span>
+                    </div>
+
+                    <div class="summary-row">
+                        <span class="summary-label summary-total">Total</span>
+                        <span class="summary-value summary-total">$0.00</span>
+                    </div>
+
+                    <button class="checkout-btn">
+                        Place an order
+                        <img src="./img/Aerrow2.svg" alt="Arrow" width="20">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="checkout-form" style="display: none;">
+            <h2 class="checkout-title">Checkout Information</h2>
+            
+            <div class="checkout-content">
+                <form id="orderForm" class="checkout-details">
+                    <div class="form-group">
+                        <h3 class="form-section-title">Personal Information</h3>
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="firstName">First Name*</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="lastName">Last Name*</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="phone">Phone Number*</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <h3 class="form-section-title">Shipping Address</h3>
+                        <div class="form-field">
+                            <label for="country">Country*</label>
+                            <input type="text" id="country" name="country" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="city">City*</label>
+                            <input type="text" id="city" name="city" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="street">Street*</label>
+                                <input type="text" id="street" name="street" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="house">House/Building*</label>
+                                <input type="text" id="house" name="house" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="apartment">Apartment</label>
+                                <input type="text" id="apartment" name="apartment">
+                            </div>
+                            <div class="form-field">
+                                <label for="zip">Postal Code*</label>
+                                <input type="text" id="zip" name="zip" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <h3 class="form-section-title">Payment Method</h3>
+                        <div class="payment-methods">
+                            <label class="payment-method">
+                                <input type="radio" name="payment" value="card" checked>
+                                <div class="payment-content">
+                                    <img src="./img/credit-card.svg" alt="Credit Card">
+                                    <span>Credit/Debit Card</span>
+                                </div>
+                            </label>
+                            <label class="payment-method">
+                                <input type="radio" name="payment" value="sbp">
+                                <div class="payment-content">
+                                    <img src="./img/mobile-payment.svg" alt="SBP">
+                                    <span>Fast Payment System</span>
+                                </div>
+                            </label>
+                            <label class="payment-method">
+                                <input type="radio" name="payment" value="cash">
+                                <div class="payment-content">
+                                    <img src="./img/cash.svg" alt="Cash">
+                                    <span>Cash on Delivery</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="order-summary-checkout">
+                        <h3 class="form-section-title">Order Summary</h3>
+                        <div class="summary-row">
+                            <span>Subtotal:</span>
+                            <span class="checkout-subtotal">$0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping:</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Tax:</span>
+                            <span class="checkout-tax">$0.00</span>
+                        </div>
+                        <div class="summary-row total-row">
+                            <span>Total:</span>
+                            <span class="checkout-total">$0.00</span>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="back-to-cart-btn">Back to Cart</button>
+                        <button type="submit" class="place-order-btn">Arrange Order</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-card">
+        <div class="contacts-us">
+            <h1 class="text-contact">Contact Us</h1>
+            <h1 class="title-text-foot">Email</h1>
+            <p class="pretitle-text-foot">needhelp@Organia.com</p>
+            <h1 class="title-text-foot">Phone</h1>
+            <p class="pretitle-text-foot">666 888 888</p>
+            <h1 class="title-text-foot">Address</h1>
+            <p class="pretitle-text-foot">88 road, borklyn street, USA</p>
+        </div>
+
+        <div class="vertical-line"></div>
+
+        <div class="messenger-icon">
+            <img src="./img/Сочетание 1.svg" alt="Organia Logo">
+            <p class="messenger-icon-text">Simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                simply dummy text of the printing</p>
+            <div class="icon-foot">
+                <img src="./img/1.svg" alt="Social Icon 1">
+                <img src="./img/2.svg" alt="Social Icon 2">
+                <img src="./img/3.svg" alt="Social Icon 3">
+                <img src="./img/4.svg" alt="Social Icon 4">
+            </div>
+        </div>
+
+        <div class="vertical-line"></div>
+
+        <div class="utility-pages">
+            <h1 class="text-utility-pages">Utility Pages</h1>
+            <a href="./about.html" class="footer-link">About</a>
+            <a href="./shop.html" class="footer-link">Shop</a>
+            <a href="./contact.html" class="footer-link">Contact</a>
+            <a href="./team.html" class="footer-link">Team</a>
+            <a href="./news.html" class="footer-link">News</a>
+        </div>
+    </footer>
+</body>
+
+</html>
