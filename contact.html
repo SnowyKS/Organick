@@ -4,8 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="./style.css">
+    <style>
+        /* Стили для модального окна */
+        .success-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .success-modal .modal-content {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+        }
+
+        .success-modal .modal-icon {
+            width: 80px;
+            height: 80px;
+            background: #68A47F;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            margin: 0 auto 20px;
+        }
+
+        .success-modal h2 {
+            color: #274C5B;
+            font-family: Roboto;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .success-modal p {
+            color: #525C60;
+            font-family: Open Sans;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+
+        .success-modal .modal-close-btn {
+            background: #274C5B;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 16px;
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .success-modal .modal-close-btn:hover {
+            background: #1a3641;
+        }
+    </style>
 </head>
 
 <body>
@@ -99,29 +167,29 @@
             <div class="block1-inputs">
                 <div class="block1-input-contact">
                     <h1 class="text-input">Full Name*</h1>
-                    <input class="inp-contact" type="text" placeholder="Your fullname">
+                    <input class="inp-contact" type="text" placeholder="Your fullname" required>
                 </div>
                 <div class="block2-input-contact">
                     <h1 class="text-input">Company*</h1>
-                    <input class="inp-contact" type="text" placeholder="Your company name here">
+                    <input class="inp-contact" type="text" placeholder="Your company name here" required>
                 </div>
             </div>
             <div class="block2-inputs">
                 <div class="block3-input-contact">
                     <h1 class="text-input">Your Email*</h1>
-                    <input class="inp-contact" type="text" placeholder="example@yourmail.com">
+                    <input class="inp-contact" type="email" placeholder="example@yourmail.com" required>
                 </div>
                 <div class="block4-input-contact">
                     <h1 class="text-input">Subject*</h1>
-                    <input class="inp-contact" type="text" placeholder="How can we help">
+                    <input class="inp-contact" type="text" placeholder="How can we help" required>
                 </div>
             </div>
             <div class="block5-input-contact">
                 <h1 class="text-input5">Message*</h1>
-                <input class="inp-contact5" type="text" placeholder="Hello there,i would like to talk about how to...">
+                <textarea class="inp-contact5" placeholder="Hello there, i would like to talk about how to..." required></textarea>
             </div>
 
-            <button class="btn-container">Send Message</button>
+            <button class="btn-container" type="button">Send Message</button>
         </section>
     </main>
 
@@ -161,6 +229,56 @@
             <a href="./news.html" class="footer-link">News</a>
         </div>
     </footer>
+
+    <!-- Модальное окно успешной отправки -->
+    <div class="success-modal" id="successModal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-icon">✓</div>
+            <h2>Successful!</h2>
+            <p>Your message has been sent. Our support team will respond to you within 24 hours.</p>
+            <button class="modal-close-btn">OK</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sendBtn = document.querySelector('.btn-container');
+            const successModal = document.getElementById('successModal');
+            
+            sendBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Проверка заполнения полей
+                const inputs = document.querySelectorAll('.section3-contact input, .section3-contact textarea');
+                let isValid = true;
+                
+                inputs.forEach(input => {
+                    if (input.value.trim() === '') {
+                        isValid = false;
+                        input.style.borderColor = 'red';
+                    } else {
+                        input.style.borderColor = '#68A47F';
+                    }
+                });
+                
+                if (isValid) {
+                    // Здесь должна быть реальная отправка формы (AJAX, fetch, etc.)
+                    // Для примера просто показываем модальное окно
+                    successModal.style.display = 'flex';
+                    
+                    // Очистка формы (опционально)
+                    inputs.forEach(input => input.value = '');
+                } else {
+                    alert('Please fill in all required fields.');
+                }
+            });
+            
+            // Закрытие модального окна
+            document.querySelector('.modal-close-btn').addEventListener('click', function() {
+                successModal.style.display = 'none';
+            });
+        });
+    </script>
 </body>
 
 </html>
