@@ -154,21 +154,25 @@
                             <label class="payment-method">
                                 <input type="radio" name="payment" value="card" checked>
                                 <div class="payment-content">
-                                    <img src="./img/credit-card.svg" alt="Credit Card">
+                                    <div class="card-logos">
+                                        <img src="./img/logos_visa.svg" alt="Visa" class="card-logo">
+                                        <img src="./img/logos_mastercard.svg" alt="MasterCard" class="card-logo">
+                                        <img src="./img/Mir-logo.SVG.svg" alt="МИР" class="card-logo">
+                                    </div>
                                     <span>Credit/Debit Card</span>
                                 </div>
                             </label>
                             <label class="payment-method">
                                 <input type="radio" name="payment" value="sbp">
                                 <div class="payment-content">
-                                    <img src="./img/mobile-payment.svg" alt="SBP">
+                                    <img src="./img/50f2d32c-37aa-49e3-a2eb-5a6b96ab20d1.svg" alt="СБПэй" class="payment-logo">
                                     <span>Fast Payment System</span>
                                 </div>
                             </label>
                             <label class="payment-method">
                                 <input type="radio" name="payment" value="cash">
                                 <div class="payment-content">
-                                    <img src="./img/cash.svg" alt="Cash">
+                                    <img src="./img/streamline-ultimate-color_cash-payment-bill.svg" alt="Cash on Delivery" class="payment-logo">
                                     <span>Cash on Delivery</span>
                                 </div>
                             </label>
@@ -192,6 +196,14 @@
                         <div class="summary-row total-row">
                             <span>Total:</span>
                             <span class="checkout-total">$0.00</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group consent-group">
+                        <div class="consent-checkbox">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">By clicking "Arrange order", you agree to our <a href="./terms.html" target="_blank">Terms
+                                    of Service</a> and <a href="./privacy.html" target="_blank">Privacy Policy</a>.</label>
                         </div>
                     </div>
 
@@ -238,6 +250,8 @@
             <a href="./contact.html" class="footer-link">Contact</a>
             <a href="./team.html" class="footer-link">Team</a>
             <a href="./news.html" class="footer-link">News</a>
+            <a href="./privacy.html" class="footer-link">Privacy Policy</a>
+            <a href="./terms.html" class="footer-link">Terms of Service</a>
         </div>
     </footer>
 </body>

@@ -292,3 +292,23 @@ document.addEventListener('DOMContentLoaded', function() {
         backToCartBtn.addEventListener('click', backToCart);
     }
 });
+
+
+function handleCheckoutFormSubmit(e) {
+    e.preventDefault();
+    
+    // Проверяем, приняты ли условия
+    const consentCheckbox = document.getElementById('consent');
+    if (!consentCheckbox.checked) {
+        alert('Please agree to our Terms of Service and Privacy Policy to continue.');
+        return;
+    }
+    
+    // Здесь должна быть реальная отправка формы (AJAX, fetch, etc.)
+    // Для примера просто очищаем корзину и показываем сообщение
+    
+    localStorage.removeItem('shoppingCart');
+    updateCartCounter();
+    showOrderSuccessModal();
+    document.querySelector('.checkout-form').style.display = 'none';
+}
