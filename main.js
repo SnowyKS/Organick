@@ -312,3 +312,50 @@ function handleCheckoutFormSubmit(e) {
     showOrderSuccessModal();
     document.querySelector('.checkout-form').style.display = 'none';
 }
+
+// Добавьте этот код в ваш main.js
+document.addEventListener('DOMContentLoaded', function() {
+    // Создаем кнопку мобильного меню
+    const menuBtn = document.createElement('button');
+    menuBtn.className = 'mobile-menu-btn';
+    menuBtn.innerHTML = '☰';
+    menuBtn.style.display = 'none'; // По умолчанию скрыта
+    
+    // Вставляем кнопку перед навигацией
+    const navBlock = document.querySelector('.navigation-block-fixed');
+    if (navBlock) {
+        navBlock.insertBefore(menuBtn, document.querySelector('.navigation'));
+        
+        // Проверяем ширину экрана и показываем/скрываем кнопку
+        function checkScreenSize() {
+            if (window.innerWidth <= 1024) {
+                menuBtn.style.display = 'block';
+                document.querySelector('.navigation .nav-container').classList.remove('active');
+            } else {
+                menuBtn.style.display = 'none';
+                document.querySelector('.navigation .nav-container').classList.add('active');
+            }
+        }
+        
+        // Проверяем при загрузке
+        checkScreenSize();
+        
+        // И при изменении размера окна
+        window.addEventListener('resize', checkScreenSize);
+        
+        // Обработчик клика по кнопке меню
+        menuBtn.addEventListener('click', function() {
+            const navContainer = document.querySelector('.navigation .nav-container');
+            navContainer.classList.toggle('active');
+            
+            // Плавная анимация
+            if (navContainer.classList.contains('active')) {
+                navContainer.style.maxHeight = navContainer.scrollHeight + 'px';
+            } else {
+                navContainer.style.maxHeight = '0';
+            }
+        });
+    }
+    
+    // Другие функции...
+});

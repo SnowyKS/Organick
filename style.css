@@ -3405,3 +3405,391 @@ body {
     line-height: 1.6;
     margin: 15px 0;
 }
+
+/* Планшеты (768px - 1024px) */
+@media (max-width: 1024px) {
+    /* Общие стили */
+    body {
+        padding-top: 70px;
+    }
+    
+    .navigation-block-fixed {
+        padding: 15px 30px;
+    }
+    
+    .nav-container {
+        display: none; /* Скрываем обычное меню на планшетах */
+    }
+    
+    .input-nav {
+        width: 200px;
+        background-position: 160px;
+    }
+    
+    /* Баннер */
+    .banner {
+        padding-left: 50px;
+        padding-top: 120px;
+        width: 500px;
+    }
+    
+    .banner .text2 {
+        font-size: 50px;
+    }
+    
+    /* Секции */
+    .section1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .stock1, .stock2 {
+        width: 90%;
+        height: 250px;
+        padding-top: 80px;
+    }
+    
+    .section2 {
+        flex-direction: column;
+        height: auto;
+        padding: 50px 30px;
+    }
+    
+    .img-stock {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+    
+    .container {
+        width: 100%;
+        padding: 0;
+        margin-top: 30px;
+    }
+    
+    .container-section3 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .product {
+        width: 100%;
+    }
+    
+    .section5 {
+        margin-top: 80px;
+    }
+    
+    .text-reviews {
+        width: 90%;
+    }
+    
+    .advantages {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .section6 {
+        height: auto;
+        padding: 80px 30px;
+    }
+    
+    .container-product {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .section7 {
+        flex-direction: column;
+        gap: 40px;
+        padding: 0 30px;
+    }
+    
+    .section7 img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .info-text {
+        width: 100%;
+    }
+    
+    .section8 {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    
+    .container-sec8 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .news-card {
+        max-width: 100%;
+    }
+    
+    .section9 {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        padding: 40px 30px;
+        text-align: center;
+    }
+    
+    .text-sec9 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    /* Футер */
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .vertical-line {
+        width: 80%;
+        height: 1px;
+        margin: 20px 0;
+    }
+    
+    /* Страница About */
+    .section1-about {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .img-sec1 {
+        width: 90%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+    
+    .block-text-info-sec1 {
+        width: 90%;
+    }
+    
+    .text-title-sec1, .random-text-sec1 {
+        width: 100%;
+    }
+    
+    .container1-sec2 {
+        flex-direction: column;
+    }
+    
+    .title-text-sec2, .lorem {
+        width: 100%;
+    }
+    
+    .img-sec2 {
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    .container2-sec2 {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .block-advantages {
+        margin: 10px;
+    }
+    
+    /* Страница Shop */
+    .section1-shop-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    /* Страница Contact */
+    .section1-contact {
+        flex-direction: column;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    
+    .img-contact1 {
+        width: 90%;
+        height: auto;
+        margin: 0 auto 30px;
+    }
+    
+    .container-contact {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .text-contact-h1, .text-title-contact {
+        width: 100%;
+    }
+    
+    .section2-contact {
+        width: 90%;
+        height: auto;
+        padding: 30px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .container-contact-Location {
+        width: 100%;
+        height: auto;
+    }
+    
+    .section3-contact {
+        margin-top: 80px;
+        padding: 0 30px;
+    }
+    
+    .block1-inputs, .block2-inputs {
+        flex-direction: column;
+    }
+    
+    .inp-contact, .inp-contact5 {
+        width: 100%;
+    }
+    
+    .block2-input-contact, .block4-input-contact {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    
+    /* Корзина */
+    .basket-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .basket-item-quantity {
+        justify-content: center;
+    }
+}
+
+/* Мобильные устройства (до 768px) */
+@media (max-width: 768px) {
+    /* Общие стили */
+    .navigation-block-fixed {
+        padding: 10px 15px;
+    }
+    
+    .input-nav {
+        display: none; /* Скрываем поиск на мобильных */
+    }
+    
+    .contacts h1 {
+        display: none; /* Скрываем текст "Cart" */
+    }
+    
+    .banner {
+        padding-left: 20px;
+        padding-top: 80px;
+        width: 90%;
+    }
+    
+    .banner .text2 {
+        font-size: 36px;
+    }
+    
+    .btn-head {
+        width: 180px;
+        height: 60px;
+        font-size: 16px;
+    }
+    
+    /* Секции */
+    .container-section3 {
+        grid-template-columns: 1fr;
+    }
+    
+    .section5 .advantages {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .section6 .text-but {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .section6 .btn-sec6 {
+        margin-top: 20px;
+    }
+    
+    .section9 {
+        padding: 30px 20px;
+    }
+    
+    .input-sec9, .btn-sec9 {
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    /* Страница About */
+    .icon-text-sec1 {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .container-sec3 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .comand-people {
+        width: 90%;
+    }
+    
+    /* Страница Shop */
+    .section1-shop-container {
+        grid-template-columns: 1fr;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
+    /* Корзина */
+    .basket-title {
+        font-size: 30px;
+    }
+    
+    .basket-item-img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    /* Форма контактов */
+    .text-contacts {
+        font-size: 40px;
+    }
+    
+    /* Мобильное меню */
+    .mobile-menu-btn {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    
+    .nav-container.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        z-index: 100;
+    }
+    
+    .nav-item {
+        margin: 10px 0;
+    }
+}
