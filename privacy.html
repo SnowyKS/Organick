@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
 </head>
+
 <body>
     <header class="privacy-header">
         <div class="navigation-block-fixed">
             <img src="./img/Сочетание 1.svg" alt="">
+            
             <div class="navigation">
                 <ul class="nav-container">
                     <li class="nav-item">
@@ -46,29 +50,207 @@
     <main class="main-privacy">
         <section class="privacy-section">
             <div class="privacy-container">
-                <h2>1. Information We Collect</h2>
-                <p>We may collect personal information such as your name, email address, phone number, shipping and billing address when you make a purchase or create an account.</p>
-                
-                <h2>2. How We Use Your Information</h2>
-                <p>We use the information we collect to process your orders, improve our services, communicate with you, and personalize your experience.</p>
-                
-                <h2>3. Data Security</h2>
-                <p>We implement security measures to protect your personal information. All transactions are processed through a secure gateway and no credit card information is stored on our servers.</p>
-                
-                <h2>4. Cookies</h2>
-                <p>We use cookies to enhance your experience on our website and to analyze site traffic.</p>
-                
-                <h2>5. Third-Party Services</h2>
-                <p>We may share information with third-party service providers to help us operate our business and serve you better.</p>
-                
-                <h2>6. Your Rights</h2>
-                <p>You have the right to access, correct, or delete your personal information at any time by contacting us.</p>
-                
-                <h2>7. Changes to This Policy</h2>
-                <p>We may update this privacy policy from time to time. Any changes will be posted on this page.</p>
-                
-                <h2>8. Contact Us</h2>
-                <p>If you have any questions about this privacy policy, please contact us at privacy@organia.com.</p>
+                <p class="intro-text">At Organia, we are committed to protecting your privacy. This Privacy Policy
+                    explains how we collect, use, disclose, and safeguard your information when you visit our website or
+                    make a purchase from us. Please read this privacy policy carefully. If you do not agree with the
+                    terms of this privacy policy, please do not access the site.</p>
+
+                <div class="privacy-point">
+                    <div class="privacy-header" onclick="toggleSection(1)">
+                        <h2>1. Information We Collect</h2>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="privacy-content" id="section1">
+                        <p>We collect several types of information from and about users of our website, including:</p>
+                        <ul>
+                            <li><strong>Personal Identification Information:</strong> Name, email address, phone number,
+                                shipping/billing addresses, payment information (though we don't store credit card
+                                details).</li>
+                            <li><strong>Demographic Information:</strong> Age, gender, location preferences that you
+                                voluntarily provide.</li>
+                            <li><strong>Technical Information:</strong> IP address, browser type, operating system,
+                                referring URLs, device information.</li>
+                            <li><strong>Usage Information:</strong> Pages visited, time spent on pages, clickstream
+                                data, search queries.</li>
+                            <li><strong>Cookies and Tracking Data:</strong> Information collected through cookies, web
+                                beacons, and similar tracking technologies.</li>
+                        </ul>
+                        <p>We collect this information when you register on our site, place an order, subscribe to our
+                            newsletter, respond to a survey, fill out a form, or enter information on our site.</p>
+                    </div>
+                </div>
+
+                <div class="privacy-point">
+                    <div class="privacy-header" onclick="toggleSection(2)">
+                        <h2>2. How We Use Your Information</h2>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="privacy-content" id="section2">
+                        <p>The information we collect may be used in the following ways:</p>
+                        <ul>
+                            <li>To process your transactions and deliver the products you've ordered.</li>
+                            <li>To personalize your experience and deliver content and product offerings relevant to
+                                your interests.</li>
+                            <li>To improve our website based on the feedback and information we receive from you.</li>
+                            <li>To administer contests, promotions, surveys or other site features.</li>
+                            <li>To send periodic emails regarding your order or other products and services.</li>
+                            <li>To follow up with you after correspondence (live chat, email or phone inquiries).</li>
+                            <li>To prevent fraudulent transactions, monitor against theft, and protect against criminal
+                                activity.</li>
+                            <li>To comply with legal obligations and resolve any disputes we may have.</li>
+                        </ul>
+                        <p>We may combine information we receive from other sources with information you give to us and
+                            information we collect about you. We may use this combined information for the purposes set
+                            out above.</p>
+                    </div>
+                </div>
+
+                <div class="privacy-point">
+                    <div class="privacy-header" onclick="toggleSection(3)">
+                        <h2>3. Data Security</h2>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="privacy-content" id="section3">
+                        <p>We implement a variety of security measures to maintain the safety of your personal
+                            information:</p>
+                        <ul>
+                            <li>All transactions are processed through a gateway provider and are not stored or
+                                processed on our servers.</li>
+                            <li>We use regular malware scanning and SSL technology to encrypt sensitive information.
+                            </li>
+                            <li>Your personal information is contained behind secured networks and is only accessible by
+                                a limited number of persons who have special access rights to such systems.</li>
+                            <li>We implement security measures such as two-factor authentication for administrative
+                                access.</li>
+                            <li>Regular security audits and vulnerability assessments are conducted.</li>
+                        </ul>
+                        <p>Despite these measures, no method of transmission over the Internet or method of electronic
+                            storage is 100% secure. Therefore, we cannot guarantee its absolute security. If you have
+                            any questions about security on our website, you can contact us at security@organia.com.</p>
+                    </div>
+                </div>
+
+                <div class="privacy-point">
+                    <div class="privacy-header" onclick="toggleSection(4)">
+                        <h2>4. Cookies</h2>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="privacy-content" id="section4">
+                        <p>We use cookies and similar tracking technologies to track the activity on our website and
+                            hold certain information. Cookies are files with small amount of data which may include an
+                            anonymous unique identifier.</p>
+                        <p><strong>Types of cookies we use:</strong></p>
+                        <ul>
+                            <li><strong>Essential Cookies:</strong> Necessary for the website to function and cannot be
+                                switched off.</li>
+                            <li><strong>Performance Cookies:</strong> Help us understand how visitors interact with our
+                                website.</li>
+                            <li><strong>Functionality Cookies:</strong> Enable enhanced functionality and
+                                personalization.</li>
+                            <li><strong>Targeting Cookies:</strong> Used to deliver ads relevant to you.</li>
+                        </ul>
+                        <p>You can instruct your browser to refuse all cookies or to indicate when a cookie is being
+                            sent. However, if you do not accept cookies, you may not be able to use some portions of our
+                            site. Our Cookie Policy provides more detailed information about the cookies we use.</p>
+                    </div>
+                </div>
+
+                <div class="privacy-point">
+                    <div class="privacy-header" onclick="toggleSection(5)">
+                        <h2>5. Third-Party Services</h2>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="privacy-content" id="section5">
+                        <p>We may employ third-party companies and individuals to facilitate our service ("Service
+                            Providers"), to provide the service on our behalf, to perform service-related services or to
+                            assist us in analyzing how our service is used. These third parties have access to your
+                            personal information only to perform these tasks on our behalf and are obligated not to
+                            disclose or use it for any other purpose.</p>
+                        <p><strong>Third parties we work with include:</strong></p>
+                        <ul>
+                            <li>Payment processors to handle transactions</li>
+                            <li>Shipping carriers to deliver products</li>
+                            <li>Marketing platforms for email campaigns</li>
+                            <li>Analytics providers to understand website usage</li>
+                            <li>Customer support platforms</li>
+                            <li>Cloud storage providers</li>
+                        </ul>
+                        <p>We require all third parties to respect the security of your personal data and to treat it in
+                            accordance with the law. We don't allow our third-party service providers to use your
+                            personal data for their own purposes and only permit them to process your personal data for
+                            specified purposes and in accordance with our instructions.</p>
+                    </div>
+                </div>
+
+                <div class="privacy-point">
+                    <div class="privacy-header" onclick="toggleSection(6)">
+                        <h2>6. Your Rights</h2>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="privacy-content" id="section6">
+                        <p>Depending on your location, you may have certain rights regarding your personal information,
+                            including:</p>
+                        <ul>
+                            <li><strong>Access:</strong> You can request copies of your personal data.</li>
+                            <li><strong>Rectification:</strong> You can request correction of inaccurate or incomplete
+                                data.</li>
+                            <li><strong>Erasure:</strong> You can request deletion of your personal data.</li>
+                            <li><strong>Restriction:</strong> You can request restriction of processing your personal
+                                data.</li>
+                            <li><strong>Objection:</strong> You can object to our processing of your personal data.</li>
+                            <li><strong>Data Portability:</strong> You can request transfer of your data to another
+                                organization.</li>
+                            <li><strong>Withdraw Consent:</strong> Where we rely on consent, you can withdraw it at any
+                                time.</li>
+                        </ul>
+                        <p>To exercise any of these rights, please contact us at privacy@organia.com. We may need to
+                            verify your identity before responding to such requests. We will respond to your request
+                            within 30 days. If you're not satisfied with our response, you have the right to lodge a
+                            complaint with your local data protection authority.</p>
+                    </div>
+                </div>
+
+                <div class="privacy-point">
+                    <div class="privacy-header" onclick="toggleSection(7)">
+                        <h2>7. Changes to This Policy</h2>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="privacy-content" id="section7">
+                        <p>We may update our Privacy Policy from time to time. We will notify you of any changes by
+                            posting the new Privacy Policy on this page and updating the "Last Updated" date at the
+                            bottom of this policy.</p>
+                        <p>We will let you know via email and/or a prominent notice on our service, prior to the change
+                            becoming effective. The updated policy will be effective immediately after being posted
+                            unless otherwise noted.</p>
+                        <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this
+                            Privacy Policy are effective when they are posted on this page.</p>
+                        <p>Your continued use of our service after we post any modifications to the Privacy Policy on
+                            this page will constitute your acknowledgment of the modifications and your consent to abide
+                            and be bound by the modified Privacy Policy.</p>
+                    </div>
+                </div>
+
+                <div class="privacy-point">
+                    <div class="privacy-header" onclick="toggleSection(8)">
+                        <h2>8. Contact Us</h2>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="privacy-content" id="section8">
+                        <p>If you have any questions about this Privacy Policy, please contact us:</p>
+                        <ul>
+                            <li>By email: privacy@organia.com</li>
+                            <li>By phone: +1 (555) 123-4567 (Privacy Office)</li>
+                            <li>By mail: Organia Privacy Office, 88 Road, Brooklyn Street, NY 11201, USA</li>
+                        </ul>
+                        <p>Our Data Protection Officer can be contacted directly at dpo@organia.com for any questions
+                            regarding the processing of your personal data.</p>
+                        <p>We will respond to all legitimate requests within one month. Occasionally it may take us
+                            longer if your request is particularly complex or you have made a number of requests. In
+                            this case, we will notify you and keep you updated.</p>
+                    </div>
+                </div>
+
+                <p class="last-updated">Last Updated: June 27, 2023</p>
             </div>
         </section>
     </main>
@@ -108,9 +290,12 @@
             <a href="./contact.html" class="footer-link">Contact</a>
             <a href="./team.html" class="footer-link">Team</a>
             <a href="./news.html" class="footer-link">News</a>
-            <a href="./privacy.html" class="footer-link">Privacy Policy</a>
-            <a href="./terms.html" class="footer-link">Terms of Service</a>
+            <div class="privacy">
+                <a href="./privacy.html" class="footer-link-privacy">Privacy Policy</a>
+                <a href="./terms.html" class="footer-link-privacy">Terms of Service</a>
+            </div>
         </div>
     </footer>
 </body>
+
 </html>

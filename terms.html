@@ -1,15 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy</title>
+    <title>Terms of Service</title>
     <link rel="stylesheet" href="./style.css">
+    <style>
+        /* Additional styles for expandable sections */
+        .terms-point {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+
+        .terms-header {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .terms-header h2 {
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        .toggle-icon {
+            font-size: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .terms-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding-left: 15px;
+        }
+
+        .terms-content.show {
+            max-height: 1000px;
+            /* Adjust based on content */
+        }
+
+        .rotate {
+            transform: rotate(45deg);
+        }
+    </style>
 </head>
+
 <body>
     <header class="privacy-header">
         <div class="navigation-block-fixed">
             <img src="./img/Сочетание 1.svg" alt="">
+            
             <div class="navigation">
                 <ul class="nav-container">
                     <li class="nav-item">
@@ -40,35 +84,245 @@
                 </div>
             </a>
         </div>
-        <h1 class="text-about">Privacy Policy</h1>
+        <h1 class="text-about">Terms of Service</h1>
     </header>
 
     <main class="main-privacy">
         <section class="privacy-section">
             <div class="privacy-container">
-                <h2>1. Information We Collect</h2>
-                <p>We may collect personal information such as your name, email address, phone number, shipping and billing address when you make a purchase or create an account.</p>
-                
-                <h2>2. How We Use Your Information</h2>
-                <p>We use the information we collect to process your orders, improve our services, communicate with you, and personalize your experience.</p>
-                
-                <h2>3. Data Security</h2>
-                <p>We implement security measures to protect your personal information. All transactions are processed through a secure gateway and no credit card information is stored on our servers.</p>
-                
-                <h2>4. Cookies</h2>
-                <p>We use cookies to enhance your experience on our website and to analyze site traffic.</p>
-                
-                <h2>5. Third-Party Services</h2>
-                <p>We may share information with third-party service providers to help us operate our business and serve you better.</p>
-                
-                <h2>6. Your Rights</h2>
-                <p>You have the right to access, correct, or delete your personal information at any time by contacting us.</p>
-                
-                <h2>7. Changes to This Policy</h2>
-                <p>We may update this privacy policy from time to time. Any changes will be posted on this page.</p>
-                
-                <h2>8. Contact Us</h2>
-                <p>If you have any questions about this privacy policy, please contact us at privacy@organia.com.</p>
+                <p class="intro-text">Welcome to Organia! These Terms of Service ("Terms") govern your access to and use
+                    of our website, products, and services ("Services"). By accessing or using our Services, you agree
+                    to be bound by these Terms and our Privacy Policy. If you do not agree to these Terms, please do not
+                    use our Services.</p>
+
+                <div class="terms-point">
+                    <div class="terms-header" onclick="toggleSection(1)">
+                        <h2>1. Account Registration</h2>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="terms-content" id="section1">
+                        <p>To access certain features of our Services, you may need to create an account. When creating
+                            an account, you agree to:</p>
+                        <ul>
+                            <li>Provide accurate, current, and complete information</li>
+                            <li>Maintain and promptly update your account information</li>
+                            <li>Maintain the security of your password and accept all risks of unauthorized access</li>
+                            <li>Not share your account credentials or transfer your account to anyone else</li>
+                            <li>Be responsible for all activities that occur under your account</li>
+                        </ul>
+                        <p>We reserve the right to suspend or terminate accounts that violate these Terms or that we
+                            suspect are being used fraudulently.</p>
+                    </div>
+                </div>
+
+                <div class="terms-point">
+                    <div class="terms-header" onclick="toggleSection(2)">
+                        <h2>2. Product Information and Orders</h2>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="terms-content" id="section2">
+                        <p><strong>Product Descriptions:</strong> We strive to provide accurate product descriptions and
+                            images. However, we do not warrant that descriptions or other content are accurate,
+                            complete, or error-free.</p>
+                        <p><strong>Pricing:</strong> All prices are subject to change without notice. We are not
+                            responsible for typographical errors regarding price or any other matter.</p>
+                        <p><strong>Order Acceptance:</strong> Your receipt of an order confirmation does not constitute
+                            our acceptance of your order. We reserve the right to refuse or cancel any order for any
+                            reason, including limitations on quantities available for purchase.</p>
+                        <p><strong>Shipping:</strong> Shipping times are estimates only and are not guaranteed. We are
+                            not responsible for delays caused by shipping carriers or other factors beyond our control.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="terms-point">
+                    <div class="terms-header" onclick="toggleSection(3)">
+                        <h2>3. Payment and Billing</h2>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="terms-content" id="section3">
+                        <p><strong>Payment Methods:</strong> We accept various payment methods as indicated at checkout.
+                            You represent and warrant that you have the legal right to use any payment method you
+                            provide.</p>
+                        <p><strong>Sales Tax:</strong> You are responsible for all applicable taxes associated with your
+                            purchase, which will be added to your order total.</p>
+                        <p><strong>Billing Errors:</strong> If you believe an error has been made in billing, you must
+                            notify us within 30 days of the billing date. We will investigate and correct any verified
+                            errors.</p>
+                        <p><strong>Refunds:</strong> Refund policies are outlined in our Return Policy, which is
+                            incorporated into these Terms by reference.</p>
+                    </div>
+                </div>
+
+                <div class="terms-point">
+                    <div class="terms-header" onclick="toggleSection(4)">
+                        <h2>4. User Conduct and Restrictions</h2>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="terms-content" id="section4">
+                        <p>You agree not to engage in any of the following prohibited activities:</p>
+                        <ul>
+                            <li>Using our Services for any illegal purpose or in violation of any laws</li>
+                            <li>Violating or encouraging others to violate the rights of third parties</li>
+                            <li>Posting or transmitting any harmful, offensive, or inappropriate content</li>
+                            <li>Attempting to interfere with or compromise our systems' integrity or security</li>
+                            <li>Using any automated means to access our Services without our permission</li>
+                            <li>Copying, modifying, or distributing content from our Services without authorization</li>
+                            <li>Impersonating any person or entity or misrepresenting your affiliation</li>
+                        </ul>
+                        <p>We reserve the right to investigate and prosecute violations of these restrictions to the
+                            fullest extent of the law.</p>
+                    </div>
+                </div>
+
+                <div class="terms-point">
+                    <div class="terms-header" onclick="toggleSection(5)">
+                        <h2>5. Intellectual Property</h2>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="terms-content" id="section5">
+                        <p><strong>Our Content:</strong> All content included in our Services, including text, graphics,
+                            logos, images, and software, is our property or the property of our licensors and is
+                            protected by copyright and other intellectual property laws.</p>
+                        <p><strong>Your Content:</strong> If you submit any content to us (e.g., reviews, comments), you
+                            grant us a non-exclusive, royalty-free, perpetual, and worldwide license to use, modify, and
+                            display such content in connection with our Services.</p>
+                        <p><strong>Trademarks:</strong> All trademarks, service marks, and trade names are proprietary
+                            to us or other respective owners. Nothing in these Terms grants you any right to use any
+                            trademark, service mark, or trade name displayed on our Services.</p>
+                    </div>
+                </div>
+
+                <div class="terms-point">
+                    <div class="terms-header" onclick="toggleSection(6)">
+                        <h2>6. Disclaimers and Limitations of Liability</h2>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="terms-content" id="section6">
+                        <p><strong>Disclaimer of Warranties:</strong> OUR SERVICES ARE PROVIDED "AS IS" AND "AS
+                            AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. WE DISCLAIM ALL
+                            WARRANTIES, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR
+                            A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</p>
+                        <p><strong>Limitation of Liability:</strong> TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE SHALL
+                            NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR
+                            ANY LOSS OF PROFITS OR REVENUES, WHETHER INCURRED DIRECTLY OR INDIRECTLY, OR ANY LOSS OF
+                            DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES RESULTING FROM:</p>
+                        <ul>
+                            <li>YOUR ACCESS TO OR USE OF OR INABILITY TO ACCESS OR USE OUR SERVICES</li>
+                            <li>ANY CONDUCT OR CONTENT OF ANY THIRD PARTY ON OUR SERVICES</li>
+                            <li>ANY UNAUTHORIZED ACCESS, USE, OR ALTERATION OF YOUR TRANSMISSIONS OR CONTENT</li>
+                            <li>ANY PRODUCTS OR SERVICES ADVERTISED OR OFFERED BY THIRD PARTIES</li>
+                        </ul>
+                        <p>OUR TOTAL LIABILITY FOR ANY CLAIMS UNDER THESE TERMS SHALL NOT EXCEED THE AMOUNT YOU PAID US
+                            IN THE 12 MONTHS PRECEDING THE CLAIM.</p>
+                    </div>
+                </div>
+
+                <div class="terms-point">
+                    <div class="terms-header" onclick="toggleSection(7)">
+                        <h2>7. Indemnification</h2>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="terms-content" id="section7">
+                        <p>You agree to defend, indemnify, and hold harmless Organia and its affiliates, officers,
+                            directors, employees, and agents from and against any claims, liabilities, damages, losses,
+                            and expenses, including reasonable attorneys' fees, arising out of or in any way connected
+                            with:</p>
+                        <ul>
+                            <li>Your access to or use of our Services</li>
+                            <li>Your violation of these Terms</li>
+                            <li>Your violation of any third-party right, including intellectual property or privacy
+                                rights</li>
+                            <li>Any content you submit or transmit through our Services</li>
+                            <li>Your conduct in connection with our Services</li>
+                        </ul>
+                        <p>We reserve the right to assume the exclusive defense and control of any matter subject to
+                            indemnification by you, in which case you agree to cooperate with our defense of such claim.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="terms-point">
+                    <div class="terms-header" onclick="toggleSection(8)">
+                        <h2>8. Dispute Resolution</h2>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="terms-content" id="section8">
+                        <p><strong>Governing Law:</strong> These Terms shall be governed by and construed in accordance
+                            with the laws of the State of New York, without regard to its conflict of law provisions.
+                        </p>
+                        <p><strong>Informal Resolution:</strong> Before filing a claim against Organia, you agree to
+                            attempt to resolve the dispute informally by contacting legal@organia.com. We'll try to
+                            resolve the dispute informally within 60 days.</p>
+                        <p><strong>Arbitration:</strong> Any disputes that cannot be resolved informally shall be
+                            resolved by binding arbitration in New York, NY, rather than in court. The arbitration shall
+                            be conducted by the American Arbitration Association under its Commercial Arbitration Rules.
+                        </p>
+                        <p><strong>Class Action Waiver:</strong> You may only resolve disputes with us on an individual
+                            basis and may not bring a claim as a plaintiff or class member in a class, consolidated, or
+                            representative action.</p>
+                        <p><strong>Exceptions:</strong> Either party may bring a lawsuit solely for injunctive relief to
+                            stop unauthorized use or abuse of the Services, or for intellectual property infringement.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="terms-point">
+                    <div class="terms-header" onclick="toggleSection(9)">
+                        <h2>9. Changes to These Terms</h2>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="terms-content" id="section9">
+                        <p>We may modify these Terms at any time. If we make material changes, we will provide notice
+                            through our Services or by other means to give you the opportunity to review the changes
+                            before they become effective.</p>
+                        <p>Your continued use of our Services after the revised Terms have become effective indicates
+                            that you have read, understood, and agreed to the current version of these Terms.</p>
+                        <p>We encourage you to periodically review these Terms to stay informed about our terms and
+                            conditions.</p>
+                    </div>
+                </div>
+
+                <div class="terms-point">
+                    <div class="terms-header" onclick="toggleSection(10)">
+                        <h2>10. General Terms</h2>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="terms-content" id="section10">
+                        <p><strong>Entire Agreement:</strong> These Terms constitute the entire agreement between you
+                            and Organia regarding our Services and supersede any prior agreements.</p>
+                        <p><strong>Severability:</strong> If any provision of these Terms is found unenforceable, that
+                            provision will be limited or eliminated to the minimum extent necessary, and the remaining
+                            provisions will remain in full force and effect.</p>
+                        <p><strong>Waiver:</strong> Our failure to enforce any right or provision of these Terms will
+                            not be considered a waiver of those rights.</p>
+                        <p><strong>Assignment:</strong> You may not assign or transfer these Terms or your rights under
+                            them without our consent. We may assign our rights under these Terms without restriction.
+                        </p>
+                        <p><strong>Survival:</strong> Provisions of these Terms that by their nature should survive
+                            termination will do so, including ownership provisions, warranty disclaimers, indemnity, and
+                            limitations of liability.</p>
+                    </div>
+                </div>
+
+                <div class="terms-point">
+                    <div class="terms-header" onclick="toggleSection(11)">
+                        <h2>11. Contact Information</h2>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="terms-content" id="section11">
+                        <p>If you have any questions about these Terms of Service, please contact us:</p>
+                        <ul>
+                            <li>By email: legal@organia.com</li>
+                            <li>By phone: +1 (555) 987-6543 (Legal Department)</li>
+                            <li>By mail: Organia Legal Department, 88 Road, Brooklyn Street, NY 11201, USA</li>
+                        </ul>
+                        <p>For customer service inquiries unrelated to these Terms, please use our standard contact
+                            information available on our Contact Us page.</p>
+                    </div>
+                </div>
+
+                <p class="last-updated">Last Updated: June 27, 2023</p>
             </div>
         </section>
     </main>
@@ -108,9 +362,30 @@
             <a href="./contact.html" class="footer-link">Contact</a>
             <a href="./team.html" class="footer-link">Team</a>
             <a href="./news.html" class="footer-link">News</a>
-            <a href="./privacy.html" class="footer-link">Privacy Policy</a>
-            <a href="./terms.html" class="footer-link">Terms of Service</a>
+            <div class="privacy">
+                <a href="./privacy.html" class="footer-link-privacy">Privacy Policy</a>
+                <a href="./terms.html" class="footer-link-privacy">Terms of Service</a>
+            </div>
         </div>
     </footer>
+
+    <script>
+        function toggleSection(sectionNumber) {
+            const content = document.getElementById(`section${sectionNumber}`);
+            const icon = document.querySelector(`#section${sectionNumber}`).previousElementSibling.querySelector('.toggle-icon');
+
+            content.classList.toggle('show');
+            icon.classList.toggle('rotate');
+
+            // Close other sections when opening a new one (optional)
+            // document.querySelectorAll('.terms-content').forEach((section, index) => {
+            //     if (index+1 !== sectionNumber && section.classList.contains('show')) {
+            //         section.classList.remove('show');
+            //         section.previousElementSibling.querySelector('.toggle-icon').classList.remove('rotate');
+            //     }
+            // });
+        }
+    </script>
 </body>
+
 </html>
